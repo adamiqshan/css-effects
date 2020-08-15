@@ -1,0 +1,85 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    font-family: 'Alata', sans-serif;
+}
+
+a{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: rgb(240, 233, 233);
+    font-size: 24px;
+    overflow: hidden;
+	transition: .2s;
+
+}
+
+a:hover{
+	color: rgb(39, 35, 35);
+	background: #fdd400;
+	box-shadow: 0 0 10px #fdd400,0 0 40px #fdd400,0 0 80px #fdd400;
+	transition-delay: 1.1s;
+}
+
+a span{
+	position: absolute;
+	display: block;
+}
+
+a span:nth-child(1){
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(90deg,transparent,#fdd400);
+}
+
+a:hover span:nth-child(1){
+	left: 100%;
+	transition: .25s;
+} 
+
+a span:nth-child(2){
+	top: -100%;
+	right : 0;
+	width: 3px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#fdd400);
+}
+a:hover span:nth-child(2){
+	top: 100%;
+	transition: .25s;
+	transition-delay: .25s;
+}
+
+a span:nth-child(3){
+	bottom: 0;
+	right : -100%;
+	width: 100%;
+	height: 3px;
+	background: linear-gradient(270deg,transparent,#fdd400);
+}
+a:hover span:nth-child(3){
+	right: 100%;
+	transition: .25s;
+	transition-delay: .5s;
+}
+
+a span:nth-child(4){
+	top: 100%;
+	left : 0;
+	width: 3px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#fdd400);
+}
+a:hover span:nth-child(4){
+	top: -100%;
+	transition: .25s;
+	transition-delay: .75s;
+}
