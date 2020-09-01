@@ -38,7 +38,6 @@ body{
 .clock .mins,
 .clock .secs
 {
-    
     position: absolute;
 }
 
@@ -65,7 +64,6 @@ body{
 
 .hr:before{
     content: '';
-    position: absolute;
     width: 8px;
     height: 100px;
     background-color: tomato;
@@ -75,7 +73,6 @@ body{
 
 .min:before{
     content: '';
-    position: absolute;
     width: 4px;
     height: 120px;
     background-color: #f1ecec;
@@ -85,7 +82,6 @@ body{
 
 .sec:before{
     content: '';
-    position: absolute;
     width: 4px;
     height: 150px;
     background-color: rgba(238, 238, 25, 0.856);
