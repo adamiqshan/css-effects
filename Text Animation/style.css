@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(7, 7, 7);
+}
+
+h1{
+    color: white;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 4rem;
+    font-family: sans-serif;
+
+}
+
+span{
+   transition: all 0.5s ease;
+   transform: translateY(50px);
+   display: inline-block;
+}
+
+span.fade {
+    color: rgba(219, 235, 6, 0.89);
+    transform: translateY(0px);
+}
